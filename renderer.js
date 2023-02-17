@@ -5783,6 +5783,9 @@ module.exports = function(e) {
                 },
                 openArchiveFlash() {
                     l.shell.openItem(A.join(l.remote.getGlobal("userDataPath"), "flash", "system"))
+                },
+                reloadMods() {
+                    
                 }
             },
             mounted() {
@@ -5871,9 +5874,12 @@ module.exports = function(e) {
                 }
             }, [e._v("\n                    Okay\n                ")])])])]), e._v(" "), n("div", [n("div", {
                 staticClass: "settings_title"
-            }, [e._v("Mods")]), e._v(" "), n("div", {
+            },
+
+            // add ArchiveMod category
+            [e._v("ArchiveMod")]), e._v(" "), n("div", {
                 staticClass: "settings_para mt-1"
-            }, [e._v("\n            Reload NKA Mods:\n            "), n("div", {
+            }, [e._v("\n            Reload Modifications:\n            "), n("div", {
                 directives: [{
                     name: "tippy",
                     rawName: "v-tippy",
@@ -5886,12 +5892,34 @@ module.exports = function(e) {
                 }],
                 staticClass: "resetDataBtn",
                 attrs: {
-                    content: "Reloads local modifications"
+                    content: "Reloads and applies local NKA modifications"
+                },
+                on: {
+                    click: e.reloadMods
+                }
+            })],
+
+            [e._v("Flash")]), e._v(" "), n("div", {
+                staticClass: "settings_para mt-1"
+            }, [e._v("\n            Clear Flash Storage:\n            "), n("div", {
+                directives: [{
+                    name: "tippy",
+                    rawName: "v-tippy",
+                    value: {
+                        theme: "light",
+                        distance: 5,
+                        duration: 150
+                    },
+                    expression: "{ theme: 'light', distance: 5, duration: 150 }"
+                }],
+                staticClass: "resetDataBtn",
+                attrs: {
+                    content: "Resets local flash game storage"
                 },
                 on: {
                     click: e.forceLogoutConf
                 }
-            }, [e._v("\n                Reload\n               "), n("i", {
+            }, [e._v("\n                Clear\n                "), n("i", {
                 staticClass: "fad ml-1 fa-exclamation-circle"
             })])]), e._v(" "), e.$electron.remote.getGlobal("stagingBuild") ? n("div", {
                 staticClass: "settings_para mt-1 d-flex flex-column"
