@@ -5871,9 +5871,9 @@ module.exports = function(e) {
                 }
             }, [e._v("\n                    Okay\n                ")])])])]), e._v(" "), n("div", [n("div", {
                 staticClass: "settings_title"
-            }, [e._v("Flash")]), e._v(" "), n("div", {
+            }, [e._v("Mods")]), e._v(" "), n("div", {
                 staticClass: "settings_para mt-1"
-            }, [e._v("\n            Clear Flash Storage:\n            "), n("div", {
+            }, [e._v("\n            Reload NKA Mods:\n            "), n("div", {
                 directives: [{
                     name: "tippy",
                     rawName: "v-tippy",
@@ -5886,40 +5886,14 @@ module.exports = function(e) {
                 }],
                 staticClass: "resetDataBtn",
                 attrs: {
-                    content: "Resets local flash game storage"
+                    content: "Reloads local modifications"
                 },
                 on: {
                     click: e.forceLogoutConf
                 }
-            }, [e._v("\n                Clear\n                "), n("i", {
+            }, [e._v("\n                Reload\n               "), n("i", {
                 staticClass: "fad ml-1 fa-exclamation-circle"
-            })])],
-            
-            // ArchiveMod reload mods button
-            [e._v("\n            ArchiveMod:\n            "), n("div", {
-                directives: [{
-                    name: "tippy",
-                    rawName: "v-tippy",
-                    value: {
-                        theme: "light",
-                        distance: 5,
-                        duration: 150
-                    },
-                    expression: "{ theme: 'light', distance: 5, duration: 150 }"
-                }],
-                staticClass: "resetDataBtn",
-                attrs: {
-                    content: "Reloads your modifications"
-                },
-                on: {
-                    click: e.forceLogoutConf
-                }
-            }, [e._v("\n                Reload\n                "), n("i", {
-                staticClass: "fad ml-1 fa-exclamation-circle"
-            })])]
-            // ---*---*---*--- END OF LINE ---*---*---*---
-
-            ), e._v(" "), e.$electron.remote.getGlobal("stagingBuild") ? n("div", {
+            })])]), e._v(" "), e.$electron.remote.getGlobal("stagingBuild") ? n("div", {
                 staticClass: "settings_para mt-1 d-flex flex-column"
             }, [n("span", {
                 staticClass: "w-100"
