@@ -13,6 +13,7 @@ can press the gear icon, which opens up the same context menu as right-clicking 
 After pressing `Browse Local Files`, you need to navigate to the `resources` folder, and open it.
 ![image](https://user-images.githubusercontent.com/71283197/219678679-10b27540-b142-4243-917f-1aeb54764af7.png)
 ![image](https://user-images.githubusercontent.com/71283197/219678767-2350b2d7-c413-487a-9cbd-794e8f65520d.png)
+
 You will see a folder and a file named `app.asar`, and this is the file we are going to replace. Now, navigate to the `Releases` tab on this
 repository and find the latest release, and download it. After downloading, just replace the original `app.asar` with the new one you
 downloaded from the latest version.
