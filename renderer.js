@@ -5785,7 +5785,7 @@ module.exports = function(e) {
                     l.shell.openItem(A.join(l.remote.getGlobal("userDataPath"), "flash", "system"))
                 },
                 reloadMods() {
-                    
+
                 }
             },
             mounted() {
@@ -5876,10 +5876,8 @@ module.exports = function(e) {
                 staticClass: "settings_title"
             },
 
-            // add ArchiveMod category
-            [e._v("ArchiveMod")]), e._v(" "), n("div", {
-                staticClass: "settings_para mt-1"
-            }, [e._v("\n            Reload Modifications:\n            "), n("div", {
+            // ArchiveMod stuff
+            [e._v("\n            Reload Modifications:\n            "), n("div", {
                 directives: [{
                     name: "tippy",
                     rawName: "v-tippy",
@@ -5897,7 +5895,7 @@ module.exports = function(e) {
                 on: {
                     click: e.reloadMods
                 }
-            })],
+            }, [e._v("\n                Reload\n                ")])],
 
             [e._v("Flash")]), e._v(" "), n("div", {
                 staticClass: "settings_para mt-1"
